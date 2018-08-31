@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/new', (req, res) => {
+	res.render('new.hbs', {
+		pageTitle: 'New page'
+	});
+});
+
 app.get('/bad', (req, res) => {
 	res.send('Unable to fulfill this request!');
 });
